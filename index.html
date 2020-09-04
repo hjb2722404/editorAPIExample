@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>selectionAPI-基本属性</title>
+  </head>
+  <body>
+    <div id="box">
+      <div onclick="showInfo()">
+        <p>这里是一段普通的 <span>文字</span></p>
+        <p>这里是另一段普通的 <span>文字</span></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function showInfo() {
+      var sel = window.getSelection();
+      console.log(sel);
+    }
+  </script>
+</html>
